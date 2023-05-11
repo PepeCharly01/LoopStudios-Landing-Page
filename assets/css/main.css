@@ -57,6 +57,12 @@ header {
     align-items: center;
     margin-bottom: 120px;
 }
+
+.mobile-nav-brand { 
+    cursor: pointer;
+    display: none;
+}
+
 nav ul {
     display: grid;
     grid-template-columns: repeat(5, minmax(min-content, min-content));
@@ -75,6 +81,11 @@ nav ul li::after {
     background: var(--white);
 }
 nav ul li:hover::after { width: 25px; }
+
+.nav-toggler {
+    cursor: pointer;
+    display: none;
+}
 
 .banner {
     max-width: 650px;
