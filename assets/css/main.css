@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+    --ff-josefin-sans: "Josefin Sans", sans-serif;
+    --ff-alata: "Alata", sans-serif;
+    --fs-h1: 4.7em;
+    --fs-h2: 3.2em;
+    --fs-h3: 2.1em;
+    --fw-300: 300;
+    --px: 165px;
+    --mb: 180px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: var(--ff-alata);
+    font-size: 62.5%;
+}
+li { list-style: none; }
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white);
+}
+h1, h2, h3 {
+    font-family: var(--ff-josefin-sans);
+    font-weight: var(--fw-300);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.main-container {
+    max-width: 1440px;
+    margin: auto;
+    background: var(--white);
+}
+header {
+    background: #0006;
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding: 65px var(--px);
+    margin-bottom: var(--mb);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, min-content));
+    grid-gap: 32px;
+}
+nav ul li { position: relative; }
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    transform: translateX(-50%);
+    background: var(--white);
+}
+nav ul li:hover::after { width: 25px; }
+
+.banner {
+    max-width: 650px;
+    padding: 38px;
+    margin-bottom: 80px;
+    border: 3px solid var(--white);
+    font-size: var(--fs-h1);
+    color: var(--white);
+}
