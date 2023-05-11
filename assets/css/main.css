@@ -166,3 +166,27 @@ nav ul li:hover::after { width: 25px; }
     color: var(--white);
     background: var(--black);
 }
+
+footer {
+    background: var(--black);
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-brand { margin-bottom: 20px; }
+.footer-brand img { max-width: 140px; }
+
+.footer-right { text-align: right; }
+
+.social-links { 
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    font-size: 1.8em;
+    color: var(--white);
+}
+.social-links a:not(:last-child) { margin-bottom: 12px; }
+.copyright { color: var(--very-dark-gray); }
