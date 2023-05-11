@@ -48,7 +48,7 @@
         font-weight: var(--fw-300);
         text-transform: uppercase;
     }
-    .navbar-nav ul li::after { display: none; }
+    nav ul li::after { display: none; }
     .nav-toggler { display: block; }
 
     .product h2 { text-align: center; }
